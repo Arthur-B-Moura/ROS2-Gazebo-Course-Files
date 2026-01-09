@@ -1,0 +1,30 @@
+[0.140s] Invoking command in '/home/cerberus/gaz_ros2_ws/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cerberus/gancho_ws/install/actuator_pkg:/home/cerberus/ros2_ws/install/python_pkg:/home/cerberus/ros2_ws/install/activity4_py_pkg:/home/cerberus/ros2_ws/install/activity6_py_pkg:/home/cerberus/ros2_ws/install/activity1_pkg:/opt/ros/humble /usr/bin/cmake --build /home/cerberus/gaz_ros2_ws/build/robot_bringup -- -j8 -l8
+[0.687s] Invoked command in '/home/cerberus/gaz_ros2_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cerberus/gancho_ws/install/actuator_pkg:/home/cerberus/ros2_ws/install/python_pkg:/home/cerberus/ros2_ws/install/activity4_py_pkg:/home/cerberus/ros2_ws/install/activity6_py_pkg:/home/cerberus/ros2_ws/install/activity1_pkg:/opt/ros/humble /usr/bin/cmake --build /home/cerberus/gaz_ros2_ws/build/robot_bringup -- -j8 -l8
+[0.712s] Invoking command in '/home/cerberus/gaz_ros2_ws/build/robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cerberus/gancho_ws/install/actuator_pkg:/home/cerberus/ros2_ws/install/python_pkg:/home/cerberus/ros2_ws/install/activity4_py_pkg:/home/cerberus/ros2_ws/install/activity6_py_pkg:/home/cerberus/ros2_ws/install/activity1_pkg:/opt/ros/humble /usr/bin/cmake --install /home/cerberus/gaz_ros2_ws/build/robot_bringup
+[0.728s] -- Install configuration: ""
+[0.728s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/launch
+[0.749s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/launch/display.launch.xml
+[0.749s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/launch/absolute_description.launch.py
+[0.750s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/launch/absolute_display.launch.py
+[0.751s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/launch/gazebo_robot.launch.py
+[0.751s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/config
+[0.765s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/config/urdf_cam.rviz
+[0.766s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/config/gazebo_bridge.yaml
+[0.767s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/worlds
+[0.790s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/worlds/test_world.sdf
+[0.792s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/ament_index/resource_index/package_run_dependencies/robot_bringup
+[0.794s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/ament_index/resource_index/parent_prefix_path/robot_bringup
+[0.795s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.sh
+[0.795s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/environment/ament_prefix_path.dsv
+[0.795s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/environment/path.sh
+[0.796s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/environment/path.dsv
+[0.796s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/local_setup.bash
+[0.796s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/local_setup.sh
+[0.796s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/local_setup.zsh
+[0.796s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/local_setup.dsv
+[0.797s] -- Installing: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/package.dsv
+[0.797s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/ament_index/resource_index/packages/robot_bringup
+[0.797s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig.cmake
+[0.797s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/cmake/robot_bringupConfig-version.cmake
+[0.798s] -- Up-to-date: /home/cerberus/gaz_ros2_ws/install/robot_bringup/share/robot_bringup/package.xml
+[1.125s] Invoked command in '/home/cerberus/gaz_ros2_ws/build/robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cerberus/gancho_ws/install/actuator_pkg:/home/cerberus/ros2_ws/install/python_pkg:/home/cerberus/ros2_ws/install/activity4_py_pkg:/home/cerberus/ros2_ws/install/activity6_py_pkg:/home/cerberus/ros2_ws/install/activity1_pkg:/opt/ros/humble /usr/bin/cmake --install /home/cerberus/gaz_ros2_ws/build/robot_bringup

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+
+<!-- <<<< Base robot structure >>>> -->
+<robot name="my_robot">
+
+    <!-- ========= -->
+    <!-- Materials -->
+    <!-- ========= -->
+    
+    <material name="green">
+        <!-- Reg Green Blue Alfa -->
+        <color rgba="0.0 1.0 0.2 1.0"/>
+    </material>
+   
+    <material name="grey">
+        <color rgba="0.6 0.6 0.6 1.0"/>
+    </material>
+
+    <!-- ============================= -->
+    <!-- <<<< Rigid parts (links) >>>> -->
+    <!-- ============================= -->
+    
+    <!-- Base link-->
+    <link name="body_link">
+        <visual>
+            <geometry>
+                <!-- Medidas em metros -->
+                <box size="0.6 0.4 0.2"/> 
+            </geometry>
+            <!-- rpy = roll, pitch, yaw-->
+            <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+            <material name="green"/>
+        </visual>
+    </link>
+
+    <link name="second_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.2"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+            <material name="grey"/>
+        </visual>   
+    </link>
+
+    <link name="visor_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.05 0.05"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </visual>
+    </link>
+
+    <link name="right_weel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <origin xyz="0.0 -0.025 0.0" rpy="1.57 0.0 0.0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name="left_weel_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <origin xyz="0.0 0.025 0.0" rpy="1.57 0.0 0.0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <link name="center_weel_link">
+        <visual>
+            <geometry>
+                <sphere radius="0.05"/>
+            </geometry>
+            <origin xyz="0.0 0.0 -0.05" rpy="0.0 0.0 0.0"/>
+            <material name="grey"/>
+        </visual>
+    </link>
+
+    <!-- Base Link-->
+    <link name="base_link">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>   
+    </link>
+
+
+    <!-- ================ -->
+    <!-- <<<< Joints >>>> -->
+    <!-- ================ -->
+    <joint name="base_body_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="body_link"/>
+        <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <joint name="body_second_joint" type="revolute">
+        <parent link="body_link"/>
+        <child link="second_link"/>
+        <origin xyz="0.0 0.0 0.2" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit lower="-1.0" upper="1.0" effort="0.2" velocity="0.2"/>
+    </joint>
+
+    <joint name="joint_name" type="fixed">
+        <parent link="second_link"/>
+        <child link="visor_link"/>
+        <origin xyz="0.1 0.0 0.2" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <joint name="left_weel_body" type="continuous">
+        <parent link="body_link"/>
+        <child link="left_weel_link"/>
+        <origin xyz="-0.1 0.2 0.0" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+    <joint name="right_weel_body" type="continuous">
+        <parent link="body_link"/>
+        <child link="right_weel_link"/>
+        <origin xyz="-0.1 -0.2 0.0" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+    <joint name="center_weel_body" type="fixed">
+        <parent link="body_link"/>
+        <child link="center_weel_link"/>
+        <origin xyz="0.2 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </joint>
+</robot>

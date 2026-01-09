@@ -1,0 +1,10 @@
+<launch>
+    <arg name="urdf_pkg" default="self_test_robot_description" />
+    <arg name="urdf_file_path" default="urdf/robot.urdf.xacro" />
+
+    <include file="$(find-pkg-share urdf_launch)/launch/display.launch.py">
+        <arg name="urdf_package" value="$(var urdf_pkg)"/>
+        <arg name="urdf_package_path" value="$(var urdf_file_path)"/>
+    </include>
+
+</launch>

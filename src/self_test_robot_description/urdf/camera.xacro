@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <link name="camera_link" />
+    
+    <joint name="camera_visor_joint" type="fixed">
+        <parent link="visor_link"/>
+        <child link="camera_link"/>
+        <origin xyz="0.025 0.0 0.0" rpy="0.0 0.0 0.0"/>
+    </joint>
+ 
+    <!-- look at gazebosim/gz-sensors GitHub page for sensors -->
+    <gazebo reference="camera_link">
+        <sensor name="camera" type="camera">
+            <camera name="visor_camera">
+                <horizontal_fov>1.3962634</horizontal_fov>
+                <image>
+                    <width>640</width>
+                    <height>480</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.1</near>
+                    <far>15</far>
+                </clip>
+                <noise>
+                    <type>gaussian</type>
+                    <mean>0.0</mean>
+                    <stddev>0.007</stddev>
+                </noise>
+                <optical_frame_id>camera_link</optical_frame_id>
+                <camera_info_topic>/camera/camera_info</camera_info_topic>
+            </camera>
+            <always_on>1</always_on>
+            <update_rate>20</update_rate>
+            <visualize>true</visualize>
+            <topic>/camera/image_raw</topic>
+        </sensor>   
+    </gazebo>
+</robot>
