@@ -73,6 +73,15 @@ $ sudo apt install ros-humble-ros-gzharmonic-bridge
 
 # Executing 
 
+```bash
+$ git clone https://github.com/Arthur-B-Moura/ROS2-Gazebo-Course-Files.git
+$ cd ROS2-Gazebo-Course-Files
+```
+Source workspace (run from ws main directory):
+```
+$ source install/setup.bash
+```
+
 The main, final launch file for the project is `gazebo_robot.launch.py` from the `robot_bringup` package. It includes the full launch from Gazebo, with the camera sensor and a pre-made world, as well as Rviz and JSP arguments to help with debuging if wished.
 
 To execute it, run the following command.
